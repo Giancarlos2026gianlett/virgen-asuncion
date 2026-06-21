@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I.E. Virgen de la Asunción</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    text-align: center;
+}
+
+.header {
+    background: linear-gradient(135deg, #1a237e, #3949ab);
+    color: white;
+    padding: 40px 20px;
+}
+
+.header img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: white;
+    padding: 5px;
+}
+
+.header h1 {
+    margin: 10px 0;
+}
+
+.header-info {
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.header-info p {
+    margin: 4px 0;
+    font-size: 14px;
+}
+
+.menu {
+    background: #0d1b5e;
+    padding: 15px;
+}
+
+.menu a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background: #3949ab;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    background: #25D366;
+}
+
+.content {
+    padding: 40px 20px;
+}
+
+.content p {
+    max-width: 800px;
+    margin: 10px auto;
+    text-align: justify;
+}
+
+h2 {
+    color: #1a237e;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+form {
+    margin-top: 30px;
+    background: white;
+    padding: 30px 20px;
+    display: inline-block;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 380px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background: #1a237e;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 5px;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background: #3949ab;
+}
+
+#estado {
+    margin-top: 15px;
+    font-weight: bold;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+    <img src="insignia.png" alt="Insignia del Colegio">
+    <h1>I.E. Virgen de la Asunción</h1>
+    <div class="header-info">
+        <p>Distrito: Sóndor</p>
+        <p>Provincia: Huancabamba</p>
+        <p>Departamento: Piura</p>
+        <p>UGEL: UGEL Huancabamba</p>
+        <p>DRE: Dirección Regional de Educación Piura (DRE Piura)</p>
+        <p>Código Modular: 0490284</p>
+        <p>Nivel: E.B.R. Secundaria – Polidocente</p>
+        <p>Zona: Rural 3</p>
+    </div>
+</div>
+
+<div class="menu">
+    <a href="mision.html">Misión-Visión</a>
+    <a href="norma.html">Norma de convivencia</a>
+    <a href="himno.html">Himno al Colegio</a>
+    <a href="plana.html">Plana Docente y Administrativa 2026</a>
+    <a href="deporte.html">Actividades Deportivas</a>
+    <a href="reinado.html">Reinado</a>
+    <a href="poema.html">Concurso de Poesía</a>
+    <a href="mama.html">Día de la Madre</a>
+    <a href="papa.html">Día de la Papa</a>
+    <a href="alcalde.html">Alcadía y Regidaduría</a>
+    <a href="monitor.html">Monitoreo</a>
+    <a href="plan.html">Plan Lector</a>
+    <a href="desfile.html">Desfile</a>
+    <a href="sismo.html">Simulacro de sismo</a>
+    <a href="brigada.html">Brigadas</a>
+</div>
+
+<div class="content">
+
+    <h2>Bienvenidos</h2>
+
+    <p>El líder pedagógico de la IE "Virgen de la Asunción", del distrito de Sondor, saluda a todos los integrantes de nuestra familia educativa, que cumplen tareas distintas, todas importantes e insoslayables que reafirman la importancia de la labor de cada uno de sus miembros y la eficiencia en el cumplimiento constante que realizan.</p>
+    <br>
+    <p>Cada día nuestra IE lucha contra las adversidades y las asume como retos, porque el diálogo es fructífero cuando persuade a continuar cuesta arriba superando juntos las dificultades. Tenemos el compromiso con la comunidad sondoreña de cumplir con un buen trabajo, potenciar la disciplina, que contribuya en fortalecer los lazos de confraternidad con la comunidad educativa.</p>
+    <br>
+
+    <a class="button" href="https://wa.me/51936322044" target="_blank">
+        📲 Contactar por WhatsApp
+    </a>
+
+    <h2>📩 Buzón de Comentarios y Sugerencias</h2>
+
+    <form id="formulario">
+        <input type="text" id="nombre" placeholder="Nombre completo" required><br>
+        <input type="text" id="dni" placeholder="DNI" required><br>
+        <input type="tel" id="telefono" placeholder="Teléfono" required><br>
+        <input type="number" id="edad" placeholder="Edad" required><br>
+        <select id="sexo" required>
+            <option value="">Selecciona sexo</option>
+            <option value="Masculino">Masculino</option>
+            <option value="Femenino">Femenino</option>
+        </select><br>
+        <select id="tipo" required>
+            <option value="">Tipo de mensaje</option>
+            <option value="Comentario">Comentario</option>
+            <option value="Sugerencia">Sugerencia</option>
+            <option value="Felicitación">Felicitación</option>
+            <option value="Reclamo">Reclamo</option>
+        </select><br>
+        <input type="text" id="curso" placeholder="Curso (opcional)"><br>
+        <textarea id="mensaje" placeholder="Escribe tu mensaje..." required></textarea><br>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <p id="estado"></p>
+
+</div>
+
+<script>
+const scriptURL = "https://script.google.com/macros/s/AKfycbwyt5enFSiyyhGYME9Dsk-H5gci1PyyX_2XnPnN7XxEH0nN3SiWVeHh5UKQ0bGXnO6n/exec";
+
+document.getElementById("formulario").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const params = new URLSearchParams({
+        nombre:   document.getElementById("nombre").value,
+        dni:      document.getElementById("dni").value,
+        telefono: document.getElementById("telefono").value,
+        edad:     document.getElementById("edad").value,
+        sexo:     document.getElementById("sexo").value,
+        tipo:     document.getElementById("tipo").value,
+        curso:    document.getElementById("curso").value,
+        mensaje:  document.getElementById("mensaje").value
+    });
+
+    var img = new Image();
+    img.src = scriptURL + "?" + params.toString();
+
+    document.getElementById("estado").innerText = "✅ Enviado correctamente";
+    document.getElementById("formulario").reset();
+});
+</script>
+
+</body>
+</html>

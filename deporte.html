@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Actividades Deportivas</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+}
+
+/* ENCABEZADO */
+.header {
+    background: linear-gradient(135deg, #1a237e, #3949ab);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.header p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* CONTENEDOR */
+.contenedor {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* TARJETA PRINCIPAL */
+.tarjeta {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* TÍTULO */
+.tarjeta h2 {
+    text-align: center;
+    color: #1a237e;
+    margin-bottom: 20px;
+}
+
+/* GALERÍA */
+.galeria {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.galeria img {
+    width: 100%;
+    max-width: 500px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+/* TEXTO */
+.mensaje {
+    max-width: 900px;
+    margin: auto;
+    text-align: justify;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+.mensaje h3 {
+    text-align: center;
+    color: #3949ab;
+    font-size: 24px;
+}
+
+.frase {
+    text-align: center;
+    font-weight: bold;
+    color: #1a237e;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/* BLOQUE DIDÁCTICO */
+.didactico {
+    margin-top: 25px;
+    background: #e8eaf6;
+    padding: 18px;
+    border-left: 6px solid #3949ab;
+    border-radius: 10px;
+}
+
+.didactico h3 {
+    color: #1a237e;
+    margin-top: 0;
+}
+
+/* BOTÓN VOLVER */
+.btn-volver {
+    display: block;
+    width: fit-content;
+    margin: 30px auto 0;
+    padding: 12px 20px;
+    background: #3949ab;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn-volver:hover {
+    background: #25D366;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .galeria img {
+        height: auto;
+    }
+
+    .mensaje {
+        font-size: 16px;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- ENCABEZADO -->
+<div class="header">
+    <h1>Actividades Deportivas</h1>
+    <p>I.E. Virgen de la Asunción - Sóndor</p>
+</div>
+
+<!-- CONTENIDO -->
+<div class="contenedor">
+
+    <div class="tarjeta">
+
+        <h2>Juegos Escolares Deportivos y Paradeportivos 2026</h2>
+
+        <!-- IMÁGENES -->
+        <div class="galeria">
+            <img src="juegos deportivos.jpg" alt="Juegos deportivos 2026">
+            <img src="juegos deportivos 2.jpg" alt="Desfile deportivo institucional">
+        </div>
+
+        <!-- MENSAJE -->
+        <div class="mensaje">
+
+            <h3>¡Orgullosos de nuestras raíces!</h3>
+
+            <p>
+            Estimados jóvenes deportistas de nuestra querida Institución Educativa
+            "Virgen de la Asunción" de Sóndor:
+            </p>
+
+            <p>
+            Mirar sus rostros llenos de entusiasmo y contemplar el colorido de sus
+            uniformes me recuerda que el deporte no es solo competencia, sino el
+            corazón palpitante de nuestro pueblo sondoreño.
+            </p>
+
+            <p>
+            Jóvenes, que el inicio de estos Juegos Escolares Deportivos y Paradeportivos
+            2026 sea el escenario ideal para cultivar valores esenciales como la disciplina,
+            la resiliencia, el compañerismo, la perseverancia y la humildad para reconocer
+            el talento del prójimo.
+            </p>
+
+            <p class="frase">
+            ¡Que gane el mejor, pero, sobre todo, que lo disfruten todos!
+            </p>
+
+            <p class="frase">
+            ¡Muchas gracias!
+            </p>
+
+            <!-- PARTE DIDÁCTICA -->
+            <div class="didactico">
+                <h3>Valor educativo del deporte</h3>
+                <p>
+                Las actividades deportivas fortalecen la convivencia escolar, promueven
+                el trabajo en equipo y ayudan a los estudiantes a desarrollar disciplina,
+                respeto, solidaridad y amor por su institución educativa.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- BOTÓN VOLVER -->
+        <a class="btn-volver" href="index.html">← Volver al inicio</a>
+
+    </div>
+
+</div>
+
+</body>
+</html>
