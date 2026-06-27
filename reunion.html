@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Reunión Institucional 2026</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Georgia, serif;
+    background:#eef2f3;
+}
+
+/* ENCABEZADO DINÁMICO */
+.header{
+    background:linear-gradient(135deg,#0d47a1,#1976d2,#42a5f5);
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+    position:relative;
+    overflow:hidden;
+}
+
+/* efecto movimiento */
+.header::before{
+    content:"";
+    position:absolute;
+    width:200%;
+    height:200%;
+    top:-50%;
+    left:-50%;
+    background:rgba(255,255,255,0.08);
+    transform:rotate(25deg);
+    animation:move 6s linear infinite;
+}
+
+@keyframes move{
+    0%{transform:translateX(-30%) rotate(25deg);}
+    100%{transform:translateX(30%) rotate(25deg);}
+}
+
+.header h1{
+    margin:0;
+    font-size:32px;
+    position:relative;
+}
+
+.header p{
+    margin-top:10px;
+    font-size:16px;
+    position:relative;
+}
+
+/* CONTENEDOR */
+.container{
+    max-width:1150px;
+    margin:30px auto;
+    padding:20px;
+}
+
+/* TARJETA */
+.card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* TITULOS */
+h2{
+    color:#0d47a1;
+    text-align:center;
+}
+
+h3{
+    color:#1976d2;
+    margin-top:25px;
+}
+
+/* TEXTO */
+p{
+    text-align:justify;
+    line-height:1.9;
+    font-size:16px;
+}
+
+/* CAJAS DESTACADAS */
+.box{
+    background:#e3f2fd;
+    border-left:6px solid #1976d2;
+    padding:15px;
+    border-radius:10px;
+    margin-top:15px;
+}
+
+/* GALERÍA DINÁMICA */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:15px;
+    margin:25px 0;
+}
+
+.gallery img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+    border-radius:12px;
+    box-shadow:0 8px 18px rgba(0,0,0,0.25);
+    transition:0.4s;
+}
+
+/* efecto dinámico */
+.gallery img:hover{
+    transform:scale(1.05) rotate(-1deg);
+}
+
+/* BOTÓN */
+.btn-container{
+    display:flex;
+    justify-content:center;
+    margin-top:30px;
+}
+
+.btn{
+    padding:12px 22px;
+    background:#0d47a1;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#08306b;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+    <h1>🏫 Reunión de Coordinación Institucional 2026</h1>
+    <p>I.E. Virgen de la Asunción | Gestión pedagógica y organizativa</p>
+</div>
+
+<div class="container">
+<div class="card">
+
+<h2>📌 Organización del Año Escolar 2026</h2>
+
+<p>
+La Institución Educativa “Virgen de la Asunción” llevó a cabo una importante reunión de coordinación institucional con la participación del equipo directivo, plana docente, personal administrativo y representantes de APAFA, con el propósito de fortalecer la planificación del Año Escolar 2026.
+</p>
+
+<div class="box">
+El trabajo articulado entre todos los actores educativos permite garantizar una gestión eficiente y orientada a mejorar los aprendizajes de los estudiantes.
+</div>
+
+<h3>📋 Temas Desarrollados</h3>
+
+<p>
+Durante la reunión se abordaron aspectos fundamentales como la política educativa institucional, matrícula estudiantil, actualización del SIAGIE, informes pedagógicos, tutoría, psicología y comité CIST, así como el trabajo por áreas curriculares.
+</p>
+
+<h3>👨‍🏫 Participación Institucional</h3>
+
+<p>
+Los docentes y coordinadores expusieron el avance de sus áreas, promoviendo el análisis, la reflexión y la toma de decisiones conjuntas para mejorar la calidad educativa en la institución.
+</p>
+
+<h3>🤝 Compromisos y Acuerdos</h3>
+
+<p>
+Se establecieron acuerdos relacionados con la organización institucional, actividades de APAFA, gestión administrativa, firma de actas y acciones pedagógicas que serán implementadas durante el año escolar 2026.
+</p>
+
+<div class="box">
+La institución reafirma su compromiso de brindar una educación de calidad basada en el trabajo colaborativo y la mejora continua.
+</div>
+
+<!-- GALERÍA DINÁMICA -->
+<div class="gallery">
+
+    <img src="reunion1.jpg">
+    <img src="reunion2.jpg">
+    <img src="reunion3.jpg">
+    <img src="reunion4.jpg">
+    <img src="reunion5.jpg">
+    <img src="reunion6.jpg">
+    <img src="reunion7.jpg">
+    <img src="reunion8.jpg">
+</div>
+
+<!-- BOTÓN -->
+<div class="btn-container">
+    <a class="btn" href="index.html">← Volver al inicio</a>
+</div>
+
+</div>
+</div>
+
+</body>
+</html>
